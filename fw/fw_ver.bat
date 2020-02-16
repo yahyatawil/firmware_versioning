@@ -27,7 +27,7 @@ FOR /F "tokens=* USEBACKQ" %%F IN (`git rev-parse --abbrev-ref HEAD`) DO (
 SET branch=%%F
 )
 
-FOR /F "tokens=* USEBACKQ" %%F IN (`git describe --tags`) DO (
+FOR /F "tokens=* USEBACKQ" %%F IN (`git describe --abbrev^=0`) DO (
 SET ver=%%F
 )
 ::Export to version.h
