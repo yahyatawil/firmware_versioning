@@ -46,5 +46,5 @@ IF "%arg1%"=="GIT" (
 IF "%arg1%"=="SAVE" (
 @echo on
 @echo Save fw_%ver%_%branch%_%date%_%commit%.hex to %arg3%
-COPY "%arg1%\fw.ino.hex" "fw_%ver%_%branch%_%date%_%commit%.hex"
+COPY "%arg2%\fw.ino.hex" "fw_%ver%_%branch%_%date%_%commit%.hex"
 )
