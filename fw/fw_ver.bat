@@ -2,7 +2,7 @@
 :: How to use:
 :: Add this file to you Arduino project directory and add the following line to platform.txt from Arduino core files
 :: recipe.hooks.sketch.prebuild.1.pattern = {build.source.path}\fw_ver.bat GIT {build.path} {build.source.path}
-:: recipe.hooks.savehex.postsavehex.2.pattern = {build.source.path}\fw_ver.bat SAVE {build.path} {build.source.path}
+:: recipe.hooks.objcopy.postobjcopy.2.pattern = {build.source.path}\fw_ver.bat SAVE {build.path} {build.source.path}
 
 @echo off
 
